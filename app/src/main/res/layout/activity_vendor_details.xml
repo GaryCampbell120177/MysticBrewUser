@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".user_activities.VendorDetailsActivity">
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="185dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@drawable/date_available_linear_layout_background"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="9dp"
+                android:layout_marginEnd="16dp">
+
+                <ImageView
+                    android:id="@+id/vendor_details_logo_image"
+                    android:layout_width="200dp"
+                    android:layout_height="140dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginStart="76dp"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginEnd="84dp"
+                    android:layout_marginBottom="22dp"
+                   android:contentDescription="TODO" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/business_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Business Name"
+                android:background="@drawable/date_available_linear_layout_background"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="9dp"
+                android:layout_marginEnd="16dp"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:padding="7dp"/>
+
+            <TextView
+                android:id="@+id/business_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Business Address"
+                android:background="@drawable/date_available_linear_layout_background"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="9dp"
+                android:layout_marginEnd="16dp"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:padding="7dp"/>
+
+            <TextView
+                android:id="@+id/business_contact_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Business Contact Number"
+                android:background="@drawable/date_available_linear_layout_background"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="9dp"
+                android:layout_marginEnd="16dp"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:padding="7dp"/>
+
+            <TextView
+                android:id="@+id/business_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Business E-Mail"
+                android:background="@drawable/date_available_linear_layout_background"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="9dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="18dp"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:padding="7dp"/>
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/vendor_details_tab_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </com.google.android.material.tabs.TabLayout>
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/vendor_details_view_pager"
+                android:layout_width="match_parent"
+                android:layout_height="450dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="12dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

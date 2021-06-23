@@ -1,0 +1,4 @@
+include ':oppwa.mobile'
+include ':oppwa.mobile-2.64.0-release'
+include ':app'
+rootProject.name = "MysticBrewUser"

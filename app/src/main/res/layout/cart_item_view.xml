@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="15dp"
+    app:cardCornerRadius="12dp"
+    android:layout_marginStart="6dp"
+    android:layout_marginTop="3dp"
+    android:layout_marginEnd="6dp"
+    android:layout_marginBottom="2dp"
+    android:background="#514D4D">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:padding="4dp"
+        android:layout_margin="6dp"
+        android:src="@drawable/black_border_3dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/user_cart_product_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Product Name"
+                android:textSize="16sp"
+                android:textAlignment="center"
+                android:fontFamily="@font/whitehall"
+                android:layout_margin="4dp"
+                android:padding="6dp"
+                android:background="@drawable/black_border_3dp"/>
+
+            <TextView
+                android:id="@+id/user_cart_product_quantity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Product Quantity"
+                android:textSize="16sp"
+                android:textAlignment="center"
+                android:fontFamily="@font/whitehall"
+                android:layout_margin="4dp"
+                android:padding="6dp"
+                android:background="@drawable/black_border_3dp"/>
+
+            <TextView
+                android:id="@+id/user_cart_product_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Product Price"
+                android:textSize="16sp"
+                android:textAlignment="center"
+                android:fontFamily="@font/whitehall"
+                android:layout_margin="4dp"
+                android:padding="6dp"
+                android:background="@drawable/black_border_3dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

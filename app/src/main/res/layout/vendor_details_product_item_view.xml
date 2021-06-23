@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    app:cardElevation="15dp"
+    app:cardCornerRadius="2dp"
+    android:layout_margin="3dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:background="@drawable/register_text_input">
+
+        <LinearLayout
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/vendor_details_product_logo_image"
+                android:layout_width="123dp"
+                android:layout_height="110dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="9dp"
+                android:layout_marginBottom="9dp" />
+
+        <TextView
+            android:id="@+id/vendor_details_product_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/register_text_input"
+            android:text="Product Name"
+            android:fontFamily="@font/coiny_regular"
+            android:textAlignment="center"
+            android:layout_marginStart="9dp"
+            android:layout_marginTop="9dp"
+            android:layout_marginEnd="3dp"
+            android:padding="9dp"
+            />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/vendor_details_product_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/register_text_input"
+            android:text="Product Price"
+            android:fontFamily="@font/coiny_regular"
+            android:textAlignment="center"
+            android:layout_marginStart="9dp"
+            android:layout_marginTop="9dp"
+            android:layout_marginEnd="9dp"
+            android:padding="6dp"
+            />
+
+            <TextView
+                android:id="@+id/vendor_details_product_long_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/register_text_input"
+                android:text="Product Long Description"
+                android:fontFamily="@font/coiny_regular"
+                android:textAlignment="center"
+                android:layout_marginStart="9dp"
+                android:layout_marginTop="9dp"
+                android:layout_marginEnd="9dp"
+                android:layout_marginBottom="9dp"
+                android:layout_weight="1"
+                android:padding="6dp"
+                />
+            <TextView
+                android:id="@+id/vendor_details_product_category"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/register_text_input"
+                android:text="Product Category"
+                android:fontFamily="@font/coiny_regular"
+                android:textAlignment="center"
+                android:layout_marginStart="9dp"
+                android:layout_marginEnd="9dp"
+                android:layout_marginBottom="14dp"
+                android:padding="6dp"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

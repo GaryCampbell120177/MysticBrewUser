@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="15dp"
+    app:cardCornerRadius="12dp"
+    android:layout_marginTop="3dp"
+    android:layout_marginBottom="2dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:padding="2dp">
+
+        <ImageView
+            android:id="@+id/vendor_order_image_view"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_margin="12dp"
+            android:background="@drawable/add_icon_green"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/vendor_order_user_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="User Name"
+                android:textSize="22sp"
+                android:textAlignment="center"
+                android:fontFamily="@font/coiny_regular"
+                android:layout_margin="4dp"
+                android:layout_marginTop="6dp"
+                android:padding="6dp"
+                android:background="@drawable/black_border_3dp"/>
+
+            <TextView
+                android:id="@+id/vendor_order_user_mobile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="User Mobile"
+                android:textSize="22sp"
+                android:textAlignment="center"
+                android:fontFamily="@font/coiny_regular"
+                android:layout_margin="4dp"
+                android:padding="6dp"
+                android:background="@drawable/black_border_3dp"/>
+
+            <TextView
+                android:id="@+id/vendor_order_user_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="User Email"
+                android:textSize="22sp"
+                android:textAlignment="center"
+                android:fontFamily="@font/coiny_regular"
+                android:layout_margin="4dp"
+                android:padding="6dp"
+                android:background="@drawable/black_border_3dp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

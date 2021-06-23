@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+    android:background="@drawable/recycler_view_background_grey_gradient"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="3dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="6dp"
+        android:background="@drawable/black_border_3dp"
+        android:layout_margin="3dp">
+
+        <ImageView
+            android:id="@+id/vendor_image"
+            android:layout_width="98dp"
+            android:layout_height="75dp"
+            android:layout_gravity="center"
+            android:background="#36000000"
+            android:cropToPadding="true"
+            android:padding="2dp"
+            android:contentDescription="@string/todo" />
+
+        <TextView
+            android:id="@+id/vendor_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/coiny_regular"
+            android:padding="3dp"
+            android:text="Vendor Name"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/vendor_contact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="9dp"
+            android:fontFamily="@font/coiny_regular"
+            android:padding="3dp"
+            android:text="Vendor Contact"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/vendor_category"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="9dp"
+            android:fontFamily="@font/coiny_regular"
+            android:padding="3dp"
+            android:text="Vendor Category"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

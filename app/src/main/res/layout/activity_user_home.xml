@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/ic_mystic_brew_app_logo_background"
+    tools:context=".user_activities.UserHomeActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/cartImageView"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="0dp"
+            android:cropToPadding="true"
+            android:padding="9dp"
+            app:srcCompat="@drawable/ic_baseline_shopping_cart_light_grey"/>
+
+        <ImageView
+            android:id="@+id/searchImageView"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="0dp"
+            android:cropToPadding="true"
+            android:padding="9dp"
+            app:srcCompat="@android:drawable/ic_search_category_default" />
+
+        <ImageView
+            android:id="@+id/locationImageView"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="0dp"
+            android:cropToPadding="true"
+            android:padding="9dp"
+            app:srcCompat="@android:drawable/ic_menu_mylocation"/>
+
+        <ImageView
+            android:id="@+id/log_out_ImageView"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="0dp"
+            android:cropToPadding="true"
+            android:padding="9dp"
+            app:srcCompat="@android:drawable/ic_menu_revert"/>
+
+    </LinearLayout>
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="185dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/mainRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="13dp"
+        />
+
+</LinearLayout>
